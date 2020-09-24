@@ -1,4 +1,4 @@
-# KOL-Trend
+# Food-Trend
 -Do you feel lost in huge amount of information when you want to make a simple choice, i.e., order food in a restaurant? 
 
 -Key Opinion Leaders (KOL) are those who you may want to follow and check in. Those influencers will help you find out which restaurant is the one that best fits for you.
