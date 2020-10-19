@@ -17,10 +17,16 @@ The project is set up on AWS service. 9 m4.large EC2 instance is applied.
 ### 2. Set Up S3 Storage
 AWS S3 is served as datalake.
 
-### 3. Set Up Database
+### 3. Set Up Spark
+Spark 2.4.7 is installed.
+
+### 4. Set Up Database
 PostgreSQL relational database.
 
-### 4. Set Up Frontend
+### 5. Set Up Airflow
+Airflow is installed.
+
+### 6. Set Up Frontend
 Dash/Flask is served as frontend.
 
 ## Project Pipeline
