@@ -43,6 +43,5 @@ The tech pipeline is:
 ![Image of Pipeline](https://github.com/lijinling530/KOL-Trend/blob/master/image/tech%20stack.png)
 
 ## All About Data
-The input and out data is:
-![Image of Pipeline](https://github.com/lijinling530/KOL-Trend/blob/master/image/Input%20Data.png)
+The end table is:
 ![Image of Pipeline](https://github.com/lijinling530/KOL-Trend/blob/master/image/End%20Data.png)
