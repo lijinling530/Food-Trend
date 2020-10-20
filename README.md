@@ -55,4 +55,4 @@ The tech pipeline is:
 
 ## All About Data
 The end table is:
-![Image of Pipeline](https://github.com/lijinling530/KOL-Trend/blob/master/image/End%20Data.png)
+![Image of Demo](https://github.com/lijinling530/KOL-Trend/blob/master/image/demo.png)
