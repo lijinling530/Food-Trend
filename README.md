@@ -21,28 +21,38 @@ Download from: https://files.pushshift.io/reddit/
 
 ## Quickstart Guide
 ### 1. Set Up AWS Cluster
-The project is set up on AWS service. 9 m4.large EC2 instance is applied.
+The project is set up on AWS service. Total 9 (m4.large) EC2 instances are applied.
 
 ### 2. Set Up S3 Storage
-AWS S3 is served as datalake.
+Create a datalake in AWS S3.
 
 ### 3. Set Up Spark
-Spark 2.4.7 is installed.
+Install Spark 2.4.7, install pyspark.
 
 ### 4. Set Up Database
-PostgreSQL relational database.
+Install PostgreSQL relational database, create user/database, configurate JDBC.
 
 ### 5. Set Up Airflow
-Airflow is installed.
+Install Airflow, configurate Airflow PATH, define DAG, and run airflow.py.
 
 ### 6. Set Up Frontend
-Dash/Flask is served as frontend.
+Install Dash/Flask, run app.py
+
+### 7. Start Pipeline
+Start Airflow webserver and scheduler.
+1. download the compressed dataset from website, 
+2. uncompress the dataset, 
+3. upload the dataset to S3, 
+4. submit first spark job, spark will read JSON files from S3 into dataframe, convert into Parquet, upload back to S3, 
+5. submit second spark job, spark will read Parquet files from S3 into dataframe, transform and upload back to S3, meanwhile, write dataframe to PostgreSQL. 
+Airflow job finished.
+
+Run dash, or set it up in a domain webserver. Surf through the website, and get the information you want.
 
 ## Project Pipeline
 The tech pipeline is:
 ![Image of Pipeline](https://github.com/lijinling530/KOL-Trend/blob/master/image/tech%20stack.png)
 
 ## All About Data
-The input and out data is:
-![Image of Pipeline](https://github.com/lijinling530/KOL-Trend/blob/master/image/Input%20Data.png)
+The end table is:
 ![Image of Pipeline](https://github.com/lijinling530/KOL-Trend/blob/master/image/End%20Data.png)
